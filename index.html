@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<title>Телеком-СД</title> 
+    <link rel="icon" type="image/png" href="favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+	<div class="site">
+		<div class="head-ss" style=" background:#fffff">
+			<img src="images/logo.svg">
+		</div>
+		<br>
+		<h1>Верстка сайта «Телеком-СД»</h1><br>      
+        
+        <ol class="list-page">
+            <li><a target="_blank" href="index1.html">Главная страница</a></li>
+            <li><a target="_blank" href="index5.html">О компании</a></li>
+            <li><a target="_blank" href="index2.html">Блог (лента)</a></li>
+            <li><a target="_blank" href="index4.html">Блог (пост)</a></li>
+            <li><a target="_blank" href="index3.html">Кейсы (лента)</a></li>
+            <li><a target="_blank" href="index6.html">Кейсы (карточка)</a></li>
+            <li><a target="_blank" href="index7.html">Услуга 1 (карточка)</a></li>
+            <li><a target="_blank" href="index8.html">Услуга 2 (карточка)</a></li>
+            <li><a target="_blank" href="index9.html">Текстовая страница</a></li>
+        </ol>
+        
+		<h2>Валидация</h2>
+		<div><a target="_blank" href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwexpert.ru%2Fmakeup%2Fvesta_html%2Findex1.html">Валидация HTML</a></div>
+		<div><a target="_blank" href="http://wexpert.ru/makeup/vesta_html/template_styles.css?155558698877895">Валидация CSS</a></div>
+	</div>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,900&display=swap&subset=cyrillic');
+		*{margin:0;padding:0;outline:0}
+		body{background:#fafafa;height:100%;font-family:'Montserrat', Tahoma;}
+		html{height:100%}
+		.head-ss { background:#fff; padding:17px 10px 17px 10px; border-bottom:1px solid #f5f5f5; border-top: 1px solid #f5f5f5;}
+		.head-ss img { display:block;}
+		.site{max-width:1000px;box-sizing:border-box;min-height:100%;border-left:1px solid #ddd;border-right:1px solid #ddd;margin-left:auto;margin-right:auto;padding:20px 15px 20px 15px;font-family:Arial,Helvetica,sans-serif;background:#fff;font-size:16px}
+		.site a{color: #3968b1;}
+		.site a:hover{text-decoration:none}
+		.site div{margin-bottom:15px;line-height:24px}
+		.site div span{color:#999;font-size:12px}
+		.site div a{min-width:310px;display:inline-block}
+		h1,h2{margin-bottom:18px;font-family:'Montserrat', Tahoma;}
+		.list-page{margin-bottom:30px}
+		ol{list-style:none;counter-reset:li}
+		ol li {margin:0 0 12px 0}
+		li:before{counter-increment:li;content:counters(li,".") ". "}
+		ol li ol{padding-left:30px;margin-top:8px}
+	</style>
+</body>
+</html>
