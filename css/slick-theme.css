@@ -1,0 +1,46 @@
+.slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
+.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}
+.slick-list:focus{outline:0}
+.slick-list.dragging{cursor:pointer;cursor:pointer}
+.slick-slider .slick-list,.slick-slider .slick-track{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+.slick-track{position:relative;top:0;left:0;display:block;margin-left:auto;margin-right:auto;padding-bottom:0}
+.slick-track:after,.slick-track:before{display:table;content:''}
+.slick-track:after{clear:both}
+.slick-loading .slick-track{visibility:hidden}
+.slick-slide{display:none;float:left;min-height:1px}
+.slick-slide img{display:block}
+.slick-slide.slick-loading img{display:none}
+.slick-slide.dragging img{pointer-events:none}
+.slick-initialized .slick-slide{display:block}
+.slick-loading .slick-slide{visibility:hidden}
+.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}
+.slick-arrow.slick-hidden{display:none}
+.slick-dotted.slick-slider{padding-bottom:0}
+.slick-dots{position:absolute;left:0;bottom:57px;z-index:80;height:10px;display:block;width:100%;padding:0;margin:0;list-style:none;text-align:center;display:flex;justify-content:center}
+.slick-dots li{position:relative;display:inline-block;vertical-align:top;max-width:118px;height:3px;margin:0 0 0 10px;padding:0;cursor:pointer;line-height:3px;flex:1 1 0}
+.slick-dots li:first-child{margin-left:0}
+.slick-dots li button{background: #F5F5F54D;border:none;font-size:0;line-height:0;display:block;width:100%;height:3px;padding:0;cursor:pointer;color:transparent;outline:0;border-radius:0}
+.slick-dots li.slick-active button{background:#1496FF}
+.slick-prev{position:absolute;opacity:0.5;left:50px;top:50%;z-index:80;margin-top:-16px;z-index:87;border:0;transform:rotate(180deg); background:none;width:0;height:32px;padding:0 0 0 33px;overflow:hidden;display:block;outline:0;cursor:pointer;border-radius:50%;}
+.slick-prev:before{position:absolute;transform:rotate(180deg);top:50%;left:50%;margin:-16px 0 0 -10px;content:'';background: url(../images/arrows-slider.svg) no-repeat;width:19px;height:33px}
+.slick-next{position:absolute;opacity:0.5;right:50px;top:50%;z-index:80;margin-top:-16px;z-index:87;border:0;width:0;transform:rotate(180deg); background:none;height:32px;padding:0 0 0 33px;overflow:hidden;display:block;outline:0;cursor:pointer;border-radius:50%;}
+.slick-next:before{position:absolute;top:50%;left:50%;margin:-16px 0 0 -10px;content:'';background: url(../images/arrows-slider.svg) no-repeat;width:19px;height:33px}
+.fix-load{visibility:hidden;opacity:0;transition:opacity .5s}
+.fix-load.slick-initialized{visibility:visible;opacity:1}
+.fix-load .slide{display:none}
+.fix-load .slide:first-child{display:block;visibility:hidden}
+.fix-load.slick-initialized .slide{display:block;visibility:visible!important}
+.slick-prev:hover, .slick-next:hover{opacity:1}
+
+@media screen and (min-width: 999px) {
+	.slick-dots li button:hover{background:#1496FF}	
+}
+@media screen and (max-width: 767px) {
+	.fix-load-mob{visibility:hidden;opacity:0;transition:opacity .5s}
+	.fix-load-mob.slick-initialized{visibility:visible;opacity:1}
+	.fix-load-mob .slide{display:none}
+	.fix-load-mob .slide:first-child{display:block;visibility:hidden}
+	.fix-load-mob.slick-initialized .slide{display:block;visibility:visible!important}
+	.slick-prev{left:0}
+	.slick-next{right:0}
+}
