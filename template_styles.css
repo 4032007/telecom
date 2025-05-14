@@ -393,6 +393,8 @@ footer a{text-decoration:none}
 	.img-main-slider picture{ position:relative; left:auto; transform:none}
 	.text-main-slider{margin-bottom:35px}
 	.slick-dots{height:3px}
+	.ico-task{justify-content:center}
+	.in-slide-task{text-align:center}
 }
 
 /*blog*/
